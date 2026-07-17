@@ -26,20 +26,12 @@ Built for personal / small-team use: 5 independent workspaces, installable as an
 - **Frontend**: HTML/CSS/JS embedded in Jinja2 templates, no front-end framework
 - **Production server**: Gunicorn (see `Dockerfile`)
 
-## Local setup (Development)
-
-```bash
-pip install -r requirements.txt
-python app.py
-```
-
-The app starts on `http://localhost:5000`.
 
 ## Environment variables
 
 | Variable | Default | Description |
 | --- | --- | --- |
-| `PASSWORD` | `poussin` | Access password for the application |
+| `PASSWORD` | `yourpassword` | Access password for the application |
 | `SECRET_KEY` | auto-generated and stored in `uploads/secret_key.txt` | Flask session signing key. Set it explicitly if you run multiple workers/instances. |
 
 ## Production Deployment (Docker Compose)
