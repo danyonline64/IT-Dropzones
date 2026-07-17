@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  it-dropzones:
+    image: argitasuna/it-dropzones:latest
+    container_name: it-dropzones
+    ports:
+      - "8080:5000"
+    volumes:
+      - ./uploads:/app/uploads
+    environment:
+      - PASSWORD=your_password
+    restart: unless-stopped
