@@ -6,6 +6,8 @@ A small, self-hosted web app for quickly sharing files, links, text snippets and
 
 Built for personal / small-team use: 5 independent workspaces, installable as an app (PWA) on mobile and desktop, and usable for temporary public sharing.
 
+![IT Dropzones Dashboard](captureecran.png)
+
 ## Features
 
 - **5 independent workspaces**, each with its own files, URLs, snippets and a notepad.
