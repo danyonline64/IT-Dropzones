@@ -49,7 +49,9 @@ services:
     volumes:
       - ./uploads:/app/uploads
     environment:
-      - PASSWORD=your_password
+      - PASSWORD=your_password # Only required for public access; ignored on local network
+      - DEFAULT_LANG=en
+      - DEFAULT_THEME= iluna
     restart: unless-stopped
 ```
 
