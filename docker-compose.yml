@@ -8,5 +8,6 @@ services:
     volumes:
       - ./uploads:/app/uploads
     environment:
-      - PASSWORD=your_password
+      DEFAULT_LANG: en  # fr | en | eu 
+      DEFAULT_THEME: natura  # iluna | natura | amber | zuri-beltz | beltz-zuri
     restart: unless-stopped
