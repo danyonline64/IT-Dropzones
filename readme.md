@@ -13,11 +13,17 @@ Built for personal / small-team use: 5 independent workspaces, installable as an
 - **5 independent workspaces**, each with its own files, URLs, snippets and a notepad.
 - **Smart input**: paste or type content into a single field and the app automatically routes links to URLs and everything else to Snippets.
 - **Drag-and-drop** file uploads, paste images directly from the clipboard.
+- **Move items between workspaces** by dragging one or several selected items onto another workspace tab.
+- **Bulk actions**: select multiple files, URLs or snippets to delete them at once, download selected files as a ZIP, or copy selected snippets to the clipboard (newline-separated).
 - **Public sharing** of a workspace via a link (read-only, or read + write), revocable at any time. Shared workspaces are visually flagged.
 - **Trash** with restore, automatic 30-day retention.
+- **QR code sign-in**: scan a link with any QR code reader app — or with the built-in scanner button on mobile — from a device that's already signed in, to instantly authorize a new device for 1 hour without retyping the password.
 - **Installable PWA** (home screen icon on mobile, full-screen mode).
 - **Password authentication**, with an optional "stay signed in" (7 days).
-- Custom name per workspace.
+- Custom name per workspace, plus an optional app-wide logo.
+- **Multilingual UI**: French, English and Basque, with a discreet language switcher (top-right corner). The choice is remembered in a cookie.
+- **Multiple color themes** (Iluna, Natura, Amber, Zuri-beltz, Beltz-zuri), selectable per browser in Settings, with a Docker-configurable default.
+- **Display preferences**: hide empty columns or the notepad, remembered per browser.
 
 ## Tech stack
 
