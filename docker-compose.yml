@@ -1,13 +1,13 @@
-version: '3.8'
 services:
   it-dropzones:
-    image: argitasuna/it-dropzones:latest
-    container_name: it-dropzones
+    build: .
     ports:
-      - "8080:5000"
+      - "5000:5000"
+    environment:
+      PASSWORD: yourpassword
+      DEFAULT_LANG: en
+      DEFAULT_THEME: natura  # iluna | natura | amber | zuri-beltz | beltz-zuri | marrazkia
+      # SECRET_KEY: set this explicitly if you run multiple workers/instances
     volumes:
       - ./uploads:/app/uploads
-    environment:
-      DEFAULT_LANG: en  # fr | en | eu 
-      DEFAULT_THEME: natura  # iluna | natura | amber | zuri-beltz | beltz-zuri
     restart: unless-stopped
