@@ -56,15 +56,10 @@ The app starts on `http://localhost:5000`.
 | `DEFAULT_THEME`| `iluna`                                                | Default color theme when no theme cookie is set yet. One of `iluna`, `natura`, `amber`, `zuri-beltz`, `beltz-zuri`, `marrazkia`. |
 | `SECRET_KEY`   | auto-generated and stored in `uploads/secret_key.txt`  | Flask session signing key. Set it explicitly if you run multiple workers/instances.   |
 
-## Docker
+## Docker 
 
 ```bash
-docker build -t it-dropzones .
-docker run -p 5000:5000 \
-  -e PASSWORD=your_password \
-  -e DEFAULT_LANG=en \
-  -v $(pwd)/uploads:/app/uploads \
-  it-dropzones
+docker run -d --name it-dropzones --restart unless-stopped -p 5000:5000 -e PASSWORD=yourpassword -e DEFAULT_LANG=en -e DEFAULT_THEME=natura -v $PWD/itdropzones:/app/uploads argitasuna/it-dropzones:latest
 ```
 
 Or with Docker Compose (see `docker-compose.yml`):
